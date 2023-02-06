@@ -3,7 +3,8 @@
 # Copiar todo esto #
 #                  #
 ####################
-# Hecho con gusto por _______________________________________
+# Hecho con gusto por MARIA GUADALUPE MONTIEL
+# MODIFICADO EL DIA LUNES
 
 # Laboratorio - Análisis de redes en R - Algebra matricial
 
