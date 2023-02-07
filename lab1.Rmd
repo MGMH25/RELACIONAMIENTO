@@ -1,0 +1,38 @@
+
+M = as.matrix(
+  read.csv("https://raw.githubusercontent.com/PABalland/ON/master/amz.csv" , 
+           sep = ",", 
+           header = T, 
+           row.names = 1))
+M
+dim(M)
+
+M = as.matrix(
+  read.csv("https://raw.githubusercontent.com/PABalland/ON/master/amz.csv" , 
+           sep = ",", 
+           header = T, 
+           row.names = 1))
+M
+dim(M)
+M[1:6,1]
+M[1:6,1:2]
+
+rowSums(M)
+t(M)
+M+M
+X=M+M
+M^2
+dim(M)
+M%*%t(M)
+t(M)%*%M
+M
+P=t(M)%*%M
+P
+diag(P)=0
+P
+C=M%*%t(M)
+C
+diag(C)=0
+C
+
+
