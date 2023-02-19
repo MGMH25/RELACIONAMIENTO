@@ -1,10 +1,18 @@
+#lab 1 algebra lineal en R
+
+#Es la estructura de red que Amazon ocupa para hacer recomendaciones según compras actuales 
 
 M = as.matrix(
   read.csv("https://raw.githubusercontent.com/PABalland/ON/master/amz.csv" , 
            sep = ",", 
            header = T, 
            row.names = 1))
+#visualizar matriz
+
 M
+
+#dimensionar matriz
+
 dim(M)
 
 M = as.matrix(
@@ -12,27 +20,49 @@ M = as.matrix(
            sep = ",", 
            header = T, 
            row.names = 1))
+#visualizar matriz generada
+
 M
+#dimensionar matriz
 dim(M)
+#Ver sólo el vector de clientes que compran el producto corbata (prod. columna 1)
 M[1:6,1]
+#ver solo el fragmento de la base original, en relación a los dos productos que me interesan para explorar clientes y productos
 M[1:6,1:2]
-
+#computar grado de centralidad, suma de renglones
 rowSums(M)
+#función útil para enfocarnos en productos y no sólo en clientes, matriz transpuesta
 t(M)
+#suma de matrices
 M+M
+#crear un nuevo objeto llamado x
 X=M+M
+#elevar matriz al cuadrado, En una matriz binaria, no cambian los resultados
 M^2
+#dimensionar matriz
 dim(M)
+#Multiplicar matriz por su transpuesta (énfasis en clientes). Es importante primero verificar que el núermo de columnas de la matriz 1 segua igual al número de filas de la matriz 2
 M%*%t(M)
+#Multiplicación inversa (énfasis en los productos). El algoritmo de recomendación de AMAZON básucamente hace esto para tener el número de veces que 2 productos han sido comprados e identificar productos que van frecuentemente juntos 
 t(M)%*%M
+#visualizar matriz generada
 M
+#generar una matriz de similaridad de productos (de gustos) o matriz de co-ocurrencias de productos
 P=t(M)%*%M
+#visualizar Matriz de co-ocurrencia de productos
 P
+#debido a que no es una matriz de identidad, se debe cambiar la diagonal a 0
 diag(P)=0
+#visualizar objeto
 P
+#generar una matriz de similaridad de clientes o matriz de co-ocurrencias de clientes
 C=M%*%t(M)
+#visualizar objeto 
 C
+#debido a que no es una matriz de identidad, se debe cambiar la diagonal a 0
 diag(C)=0
+
+#visualizar el nuevo objeto
 C
 
 
