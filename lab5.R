@@ -1,15 +1,32 @@
+####################
+#                  #
+# Copiar todo esto #
+#                  #
+####################
+# Hecho con gusto por Carla Carolina Pérez Hernández (UAEH)
+#Ejecutado por María Guadalupe Montiel Hernández
+
+# Laboratorio - PIVOTAR A LO LARGO
+
+
+#############################################
+#LABORATORIO: Tidy data (datos ordenados) 1 #
+#############################################
+#Prerrequisitos
 #instalar paquetería tidyverse
 install.packages("tidyverse")
 #instalar paquetería readr
 install.packages("readr")
-
+#llamar a librerías
 library(tidyverse)
 library(readr)
 
 #importar datos: import dataset > From text (readr) > elegir la ruta del archivo
 #copiar código 
+library(readr)
+
 #Cargar datos. Cambiar el nombre del archivo por tabla 1
-tabla 1 <- read_csv(ice 2014.csv)
+tabla1 <-read_csv("~/Desktop/ICE2014.csv")
 
 #visualizar una parte de la tabla 
 head(tabla1)

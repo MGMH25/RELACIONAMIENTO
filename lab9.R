@@ -1,4 +1,20 @@
-#ejecutar librería
+# Hecho con gusto por Carla Carolina Pérez Hernández (UAEH)
+# Ejecutado por MAría Guadalupe Montiel Hernández
+
+# T1_03_ESPACIO PRODUCTO(2) - RELACIONAMIENTO "CASO REAL": EXPORTACIONES HIDALGUENSES
+
+# Objetivo: Estimar el relacionamiento (relatedness, proximidad, métrica de distancia entre productos)
+# ------------------------------------------------------------------------------------------------------
+# En este ejercicio vamos a:
+# 1. Cargar nuestra matriz de datos
+# 2. Calcular co ocurrencias entre lugares y productos 
+# 3. Estimar el relacionamiento, teniendo como input las co ocurrencias
+# 4. Graficar
+# 5. Exportar los resultados para trabajarlos con cytoscape o gephi
+
+#######################################
+# practica 2: exportaciones hidalguenses #
+########################################ejecutar librería
 library (EconGeo)
 #Importar datos: import Dataset > from text(base) >elegir ruta del archivo
 #Cargar matriz de datos

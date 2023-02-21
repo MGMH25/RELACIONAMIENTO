@@ -1,3 +1,23 @@
+####################
+#                  #
+# Copiar todo esto #
+#                  #
+####################
+# Hecho con gusto por María Guadalupe Montiel Hernández 
+
+# Laboratorio - Análisis de redes en R - Algebra matricial
+
+# Objetivo: Explorar las funciones de algebra lineal con un caso hipotético
+# ------------------------------------------------------------------------------------------------------
+# En este ejercicio vamos a:
+# 1. Cargar nuestra matriz hipotética de datos
+# 2. Hacer diversas operaciones matriciales
+# 3. Comprender el algoritmo base de las recomendaciones de AMAZON
+
+
+#######################################
+# LABORATORIO: Algebra matricial      #
+########################################
 #lab 1 algebra lineal en R
 
 #Es la estructura de red que Amazon ocupa para hacer recomendaciones según compras actuales 

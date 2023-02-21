@@ -1,3 +1,17 @@
+# Hecho con gusto por María Guadalupe Montiel Hernández
+# LABORATORIO - RELACIONAMIENTO "CASO HIPOTÉTICO" 
+
+# Objetivo: Estimar el relacionamiento (relatedness, proximidad, métrica de distancia entre productos)
+# ------------------------------------------------------------------------------------------------------
+# En este ejercicio vamos a:
+# 1. Cargar nuestra matriz hipotética de datos
+# 2. Calcular co ocurrencias entre personas y productos 
+# 3. Estimar el relacionamiento, teniendo como input las co ocurrencias
+# 4. Graficar
+
+#######################################
+#LABORATORIO: Relacionamiento (r)     #
+#######################################
 #llamar librería
 library (EconGeo)
 #cargar matriz hipotética de datos
